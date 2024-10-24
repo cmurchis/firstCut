@@ -25,3 +25,18 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
+
+useEffect(() => {
+    if (!localStorage.getItem("_id")) {
+        navigate("/");
+    }
+}, [navigate]);
+
+
+
+app.post("/schedule/create", (req, res) => {
+    const { userId, timezone, schedule } = req.body;
+    console.log(req.body);
+});
