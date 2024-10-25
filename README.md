@@ -1,8 +1,7 @@
 # firstCut
 
-How to run this project on your local computer
-Clone this project
+A booking site for a mobile cosmetologist, specializing in babies first haircut. A momentous experience memorialized by a piece of custom jowelery featuring a lock of babies hair, captured in resin for all time. 
 
-Run npm install in both folders to install all their dependencies.
+The scheduling feature uses gcal's appointment setting tool. Admin can set their available hours, users selected from those times and submit any custom information via a request form. Approved requests can be tracked and managed with a series of follow up reminders and information gathering, automated emails.
 
-Start both servers using npm start
+2 modals... one for before and afters and the other displays options for the custom resin jewelery selections.
