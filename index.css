@@ -178,3 +178,27 @@ div.sticky {
   padding: 50px;
   font-size: 20px;
 }
+
+header[role="banner"] {
+	#logo-main {
+	  display: block;
+	  margin: 20px auto;
+	}
+  }
+  
+  #navbar-primary.navbar-default {
+	background: transparent;
+	border: none;
+	.navbar-nav { 
+	  width: 100%;
+	  text-align: center;
+	  > li {
+		display: inline-block;
+		float: none;
+		> a {
+		  padding-left: 30px;
+		  padding-right: 30px;
+		  }
+	  }
+	}
+  }
