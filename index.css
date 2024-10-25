@@ -169,3 +169,12 @@ td {
 	justify-content: center;
 	flex-direction: column;
 }
+
+div.sticky {
+  position: sticky;
+  width : 100%;
+  bottom: 0;
+  background-color: whitesmoke;
+  padding: 50px;
+  font-size: 20px;
+}
