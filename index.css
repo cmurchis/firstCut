@@ -26,13 +26,14 @@ div.sticky {
 }
 
 header[role="banner"] {
-	#logo-main {
+	#logo {
 	  display: block;
 	  margin: 20px auto;
+	  float: left;
 	}
   }
   
-  #navbar-primary.navbar-default {
+  #navbar-primary {
 	background: transparent;
 	border: none;
 	.navbar-nav { 
@@ -40,7 +41,7 @@ header[role="banner"] {
 	  text-align: center;
 	  > li {
 		display: inline-block;
-		float: none;
+		float: right;
 		> a {
 		  padding-left: 30px;
 		  padding-right: 30px;

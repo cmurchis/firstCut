@@ -9,37 +9,38 @@
   <body>
     <header> 
     <nav>
-      <div class="logo">
+      <div id="logo" class="logo">
         <img src="img/logo.png" alt="logo" />
       </div>
-    
+    </header><!-- header role="banner" -->
+
     <div class=" navbar" id="navbar-primary">
-      <ul class="nav navbar-nav">
-        <li class="active sticky"><!-- Google Calendar Appointment Scheduling begin -->
-          <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-          <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-          <script>
-          (function() {
-            var target = document.currentScript;
-            window.addEventListener('load', function() {
-              calendar.schedulingButton.load({
-                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1M7iG8RhYj3q_i48gvt_SorPsHsaUN-VjL2cFiPzy0ZI4j4bkFf5ZT9z5V-YDNAemTRXbzaSFb?gv=true',
-                color: '#039BE5',
-                label: 'Book an appointment',
-                target,
+      <div class="pure-u-1-3">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="https://www.youtube.com/@RuleOne"><img id="youtube" src="images/youtube.png"></a></li>
+          <li class="pure-menu-item"><a href="https://twitter.com/RuleOneGG"><img id="twitter" src="images/twitter.png"></a></li>
+          <li class="pure-menu-item"><a href="https://www.twitch.tv/ruleonegg"><img id="twitch" src="images/twitch.png"></a></li>
+          <li class="active sticky">
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+            (function() {
+              var target = document.currentScript;
+              window.addEventListener('load', function() {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1M7iG8RhYj3q_i48gvt_SorPsHsaUN-VjL2cFiPzy0ZI4j4bkFf5ZT9z5V-YDNAemTRXbzaSFb?gv=true',
+                  color: '#039BE5',
+                  label: 'Book an appointment',
+                  target,
+                });
               });
-            });
-          })();
-          </script></li>
- 
-        <li><a href="#">Link</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
+            })();
+            </script></li>          <li class="pure-menu-item"><a href="https://www.instagram.com/ruleone.gg/"><img id="instagram" src="images/instagram.png"></a></li>
+        </ul>
+      
 </nav>
-</header><!-- header role="banner" -->
 
 <center> 
- 
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" width="600px" data-ride="carousel">
   <div class="carousel-inner">
@@ -58,9 +59,9 @@
   </div>
 </div>
 
-
-
 </center>
+
+</body>
 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
