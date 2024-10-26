@@ -8,74 +8,71 @@
 }
 body {
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 	font-family: "Poppins", sans-serif;
 }
 
 #navbar-primary {
-	top: 100px;
+	top: 45px;
 padding: 50px;
-font-size: 20px;
-display: block;
+font-size: 30px;
+display: inline
+max-width: 400px;
+border-radius: 3%;
+
 }
-#mullet {
+
+div #questions{
 	border-radius: 25%;
-	width: 55%;
-	height: 500px;
+max-width: 55%;
+	max-height: 45%;
     background-color: (#0D98BA);
-	margin-left: 600px;;
+	margin-left: 20%;
 	padding: 10px;
 	position: absolute;
-	top:400px;
 	color: azure;
 	text-align: center;
-	font-size: medium;
+	font-size: 20px;
 	font-family: Cochin;
-	height : 500px;
 }
-#scissors {
-	border-radius: 25%;
-	height: 400px;
-    background-color: #0D98BA;
-	margin-left: 700px;;
-	padding: 10px;
-	position: absolute;
-	top:400px;
-	color: azure;
-	text-align: center;
-	font-size: medium;
-	font-family: Cochin;
-	height : 100px;
-}
+
 
 #mullet  img{
 	top: 25px;
 padding: 15px;
-border-radius: 35%;
+border-radius: 25%;
 position: relative;
-border-width: 15px;
-border-color: black;
-border-style: solid ;
+
 
 }
+
 #scissors  img{
 	top: 25px;
 padding: 15px;
 border-radius: 35%;
 position: relative;
-max-width: 150px;}
+max-width: 150px;
+top: 60%;
+}
 
 
 h1{
-	color: rgb(194, 221, 241);
+	color: #0D98BA;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: bold;
 	top: 5%;
-	position: relative;
+	position: absolute;
+	text-justify: left;
+	left: 1%
+}
+#q1{
+	left:77%;
+	top:40%
+}
+#q2{
+	left:75%;
+	top: 64%
 }
 
-#scissors  img h1{
-	top:-35%;
 
-}
