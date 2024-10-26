@@ -7,76 +7,34 @@
     <title>First Cut</title>
   </head>
   <body>
+    <header> 
     <nav>
       <div class="logo">
         <img src="img/logo.png" alt="logo" />
       </div>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
-    </nav>
-    <div class="menubar">
-      <ul>
-        <li>
-<!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1M7iG8RhYj3q_i48gvt_SorPsHsaUN-VjL2cFiPzy0ZI4j4bkFf5ZT9z5V-YDNAemTRXbzaSFb?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-    </div>
     
-
-    
-    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+    <div class=" navbar" id="navbar-primary">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li class="sticky"> 
-          
-        </li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li class="active sticky"><!-- Google Calendar Appointment Scheduling begin -->
+          <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+          <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+          <script>
+          (function() {
+            var target = document.currentScript;
+            window.addEventListener('load', function() {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1M7iG8RhYj3q_i48gvt_SorPsHsaUN-VjL2cFiPzy0ZI4j4bkFf5ZT9z5V-YDNAemTRXbzaSFb?gv=true',
+                color: '#039BE5',
+                label: 'Book an appointment',
+                target,
+              });
+            });
+          })();
+          </script></li>
+ 
         <li><a href="#">Link</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
 </nav>
 </header><!-- header role="banner" -->
 
