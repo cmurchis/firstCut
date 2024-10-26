@@ -13,10 +13,69 @@ body {
 }
 
 #navbar-primary {
-	top: 150px;
-background-color: whitesmoke;
+	top: 100px;
 padding: 50px;
 font-size: 20px;
+display: block;
+}
+#mullet {
+	border-radius: 25%;
+	width: 55%;
+	height: 500px;
+    background-color: (#0D98BA);
+	margin-left: 600px;;
+	padding: 10px;
+	position: absolute;
+	top:400px;
+	color: azure;
+	text-align: center;
+	font-size: medium;
+	font-family: Cochin;
+	height : 500px;
+}
+#scissors {
+	border-radius: 25%;
+	height: 400px;
+    background-color: #0D98BA;
+	margin-left: 700px;;
+	padding: 10px;
+	position: absolute;
+	top:400px;
+	color: azure;
+	text-align: center;
+	font-size: medium;
+	font-family: Cochin;
+	height : 100px;
 }
 
+#mullet  img{
+	top: 25px;
+padding: 15px;
+border-radius: 35%;
+position: relative;
+border-width: 15px;
+border-color: black;
+border-style: solid ;
 
+}
+#scissors  img{
+	top: 25px;
+padding: 15px;
+border-radius: 35%;
+position: relative;
+max-width: 150px;}
+
+
+h1{
+	color: rgb(194, 221, 241);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+	top: 5%;
+	position: relative;
+}
+
+#scissors  img h1{
+	top:-35%;
+
+}
