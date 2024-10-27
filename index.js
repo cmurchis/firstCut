@@ -1,11 +1,17 @@
 const mullet = document.getElementById('mullet');
-const navbar = document.querySelector(".menubar");
+const scissors = document.getElementById('scissors');
 
-const toggleNav = () => {
-  navbar.classList.toggle("active");
-  mobileNav.classList.toggle("hamburger-active");
+const toggleQ = () => {
+  if(mullet.style.top > 0){
+  mullet.style.top -= 100;
+  scissors.style.top += 100;
+  }else{
+    mullet.style.top += 100;
+  scissors.style.top -= 100;
+  }
+
 };
-mobileNav.addEventListener("click", () => toggleNav());
+setInterval(toggleQ(), 2000)
 
 
 
