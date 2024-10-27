@@ -79,6 +79,7 @@
 border-radius: 25%;
 display:block;
 padding-left: 20%;
+background-color: whitesmoke;
 
 }
 
@@ -87,6 +88,8 @@ padding-left: 20%;
 border-radius: 25%;
 display: none;
 padding-left: 20%;
+background-color: whitesmoke;
+
 
 }
 .modal img{
