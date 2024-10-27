@@ -1,116 +1,41 @@
 
-* {
-  box-sizing: border-box;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 1px 1px 1px 4px;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #174f5260;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: #51b0ad;
-}
-
-.aside {
-  background-color: whitesmoke;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(5, 5, 5, 0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.footer {
-  background-color: #0099cc8c;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-#logo{
-	display: block;
-	width: 50%;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
-#navbar-primary {
-	top: 15px;
-font-size: 100%;
-display: inline;
-border-radius: 3%;
-
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
-
 #mullet  {
 	
 border-radius: 25%;
-display:block;
 
 }
 
@@ -123,7 +48,6 @@ display: none;
 .modal img{
 	width : 40%;
 	border-radius: 5%;
-	display : block;
 
 }
 
@@ -134,22 +58,18 @@ h1{
 	font-weight: bold;
 	top: 5%;
 	text-justify: center;
-	display:block;
 
 }
 
 
 .modal{
-	width :40%;
-	height : 50%;
+
 	background-color: whitesmoke;
 	border-radius: 10%;
 	border-width: 3px;
 	box-shadow: 10px 5px 5px darkgrey;
 	position: absolute;
-	display: inline;
-	margin: 15% 0 0 60%;
-	padding: 3%;
+
 }
 
 #book {
@@ -163,7 +83,3 @@ h1{
   }
  
  
-
-  .col-s-2  img{
-    max-width: 150px;
-  }
