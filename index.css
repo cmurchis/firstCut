@@ -110,7 +110,6 @@ border-radius: 3%;
 #mullet  {
 	
 border-radius: 25%;
-position : relative;
 display:block;
 
 }
@@ -119,7 +118,6 @@ display:block;
 #scissors  {
 border-radius: 25%;
 display: none;
-position: relative;
 
 }
 .modal img{
