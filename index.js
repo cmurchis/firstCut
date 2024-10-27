@@ -1,4 +1,4 @@
-const mobileNav = document.querySelector(".hamburger");
+const mullet = document.getElementById('mullet');
 const navbar = document.querySelector(".menubar");
 
 const toggleNav = () => {
