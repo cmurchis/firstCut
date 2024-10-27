@@ -34,6 +34,10 @@
 .container:hover .overlay {
   opacity: 1;
 }
+.container:focus .overlay{
+  opacity: 1;
+
+}
 
 
 .row {
@@ -74,16 +78,19 @@
 	
 border-radius: 25%;
 display:block;
+padding-left: 20%;
+
 }
 
 
 #scissors  {
 border-radius: 25%;
 display: none;
+padding-left: 20%;
 
 }
 .modal img{
-	width : 40%;
+	width : auto;
 	border-radius: 5%;
 
 }
@@ -94,20 +101,14 @@ h1{
 	font-size: 150%;
 	font-weight: bold;
 	top: 5%;
+  right: 40%;
 	text-justify: center;
 
 }
-
-
-.modal{
-
-	background-color: whitesmoke;
-	border-radius: 10%;
-	border-width: 3px;
-	box-shadow: 10px 5px 5px darkgrey;
-	position: absolute;
-
+#logo{
+  max-width: 25%;
 }
+
 
 nav {
 	position: relative; /* Initial position */
@@ -130,8 +131,8 @@ nav {
   }
   
   a {
-    padding: 8px;
-    background-color: #dddddd;
+    padding: 10px;
+    max-width: 25px;
     
   }
  
