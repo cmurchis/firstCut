@@ -1,5 +1,6 @@
 const mullet = document.getElementById('mullet');
 const scissors = document.getElementById('scissors');
+const scheduling
 
 const toggleQ = (x, y) => {
   if(x.style.display == 'block'){
@@ -15,11 +16,12 @@ setInterval(toggleQ, 3000, mullet, scissors)
 
 
 window.addEventListener('scroll', function() {
-  const button = document.getElementById('myButton');
+  
+  const book = document.getElementById('book')
   if (window.scrollY > 100) { // Adjust this threshold as needed
-    button.classList.add('sticky');
+    book.classList.add('sticky');
   } else {
-    button.classList.remove('sticky');
+    book.classList.remove('sticky');
   }
 });
 
