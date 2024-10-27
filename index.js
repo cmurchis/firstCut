@@ -18,7 +18,7 @@ setInterval(toggleQ, 3000, mullet, scissors)
 window.addEventListener('scroll', function() {
   
   const book = document.getElementById('book')
-  if (window.scrollY > 100) { // Adjust this threshold as needed
+  if (window.scrollY > 10) { // Adjust this threshold as needed
     book.classList.add('sticky');
   } else {
     book.classList.remove('sticky');

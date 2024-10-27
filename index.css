@@ -161,23 +161,9 @@ h1{
 	bottom: 20px;
 	right: 20px;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    column-gap: 50px;
+ 
+ 
 
-
-  }
-  .grid-item {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .grid-item img{
-;
-    max-width: 150px;
-  }
   .col-s-2  img{
     max-width: 150px;
   }
