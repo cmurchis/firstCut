@@ -1,3 +1,40 @@
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
 
 .row {
   display: flex;
@@ -36,7 +73,7 @@
 #mullet  {
 	
 border-radius: 25%;
-
+display:block;
 }
 
 
@@ -72,14 +109,36 @@ h1{
 
 }
 
-#book {
+nav {
 	position: relative; /* Initial position */
+  width: auto;
+  
   }
   
-  #book.sticky {
+  nav.sticky {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	top: 50%;
+  right: 50%;
+  z-index: 10;
   }
  
+  li {
+    float: left;
+    display: inline;
+    text-decoration: none;
+    
+  }
+  
+  a {
+    padding: 8px;
+    background-color: #dddddd;
+    
+  }
  
+  .navbar{
+    position:fixed;
+    bottom: 50%;
+  right:50%;
+  z-index: 10;
+  }
+v                                                              
