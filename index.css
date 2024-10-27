@@ -73,22 +73,21 @@
     flex: 100%;
     max-width: 100%;
   }
+  nav img{
+    max-width: 5%;
+  }
 }
 #mullet  {
 	
-border-radius: 25%;
 display:block;
 padding-left: 20%;
-background-color: whitesmoke;
 
 }
 
 
 #scissors  {
-border-radius: 25%;
 display: none;
 padding-left: 20%;
-background-color: whitesmoke;
 
 
 }
