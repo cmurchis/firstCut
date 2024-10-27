@@ -1,18 +1,26 @@
 const mullet = document.getElementById('mullet');
 const scissors = document.getElementById('scissors');
 
-const toggleQ = () => {
-  if(mullet.style.top > 0){
-  mullet.style.top -= 100;
-  scissors.style.top += 100;
+const toggleQ = (x, y) => {
+  if(x.style.display == 'block'){
+  x.style.display = 'none';
+  y.style.display = 'block';
   }else{
-    mullet.style.top += 100;
-  scissors.style.top -= 100;
+    x.style.display = 'block';
+  y.style.display = 'none';
   }
 
 };
-setInterval(toggleQ(), 2000)
+setInterval(toggleQ, 3000, mullet, scissors)
 
 
+window.addEventListener('scroll', function() {
+  const button = document.getElementById('myButton');
+  if (window.pageYOffset > 100) { // Adjust this threshold as needed
+    button.classList.add('sticky');
+  } else {
+    button.classList.remove('sticky');
+  }
+});
 
 

@@ -19,7 +19,7 @@ html {
 }
 
 .header {
-  background-color: #9933cc;
+  background-color: #174f5260;
   color: #ffffff;
   padding: 15px;
 }
@@ -39,16 +39,16 @@ html {
 }
 
 .menu li:hover {
-  background-color: #0099cc;
+  background-color: #cfd2d3;
 }
 
 .aside {
-  background-color: #33b5e5;
+  background-color: whitesmoke;
   padding: 15px;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(5, 5, 5, 0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .footer {
@@ -108,46 +108,43 @@ border-radius: 3%;
 }
 
 #mullet  {
-	top: 25px%;
+	
 border-radius: 25%;
-position : absolute;
-width : 75%;
+position : relative;
 display:block;
 
 }
 
 
 #scissors  {
-	top: 7%;
 border-radius: 25%;
-display: inline;
+display: none;
 position: relative;
 
 }
 .modal img{
-	
+	width : 50%;
 	border-radius: 5%;
 	position : relative;
-	width : 30%
+	display : block;
 
 }
 
 h1{
 	color: #0D98BA;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 100%;
+	font-size: 150%;
 	font-weight: bold;
 	top: 5%;
-	text-justify: left;
+	text-justify: center;
 	display:block;
-	float:right;
 
 }
 
 
 .modal{
 	width :40%;
-	height : 25%;
+	height : 50%;
 	background-color: whitesmoke;
 	border-radius: 10%;
 	border-width: 3px;
@@ -157,3 +154,14 @@ h1{
 	margin: 15% 0 0 60%;
 	padding: 3%;
 }
+
+#schedulingButton {
+	position: relative; /* Initial position */
+  }
+  
+  #schedulingButton.sticky {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+  }
+  
