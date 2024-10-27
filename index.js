@@ -16,7 +16,7 @@ setInterval(toggleQ, 3000, mullet, scissors)
 
 window.addEventListener('scroll', function() {
   const button = document.getElementById('myButton');
-  if (window.pageYOffset > 100) { // Adjust this threshold as needed
+  if (window.scrollY > 100) { // Adjust this threshold as needed
     button.classList.add('sticky');
   } else {
     button.classList.remove('sticky');

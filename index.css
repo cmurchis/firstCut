@@ -39,7 +39,7 @@ html {
 }
 
 .menu li:hover {
-  background-color: #cfd2d3;
+  background-color: #51b0ad;
 }
 
 .aside {
@@ -52,7 +52,7 @@ html {
 }
 
 .footer {
-  background-color: #0099cc;
+  background-color: #0099cc8c;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
