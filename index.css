@@ -77,7 +77,8 @@
     max-width: 15%;
   }
   a img{
-    max-width: 8%;
+    max-width: 12%;
+    padding-left: 5%;
   }
   #mullet{
     padding: 0%;
