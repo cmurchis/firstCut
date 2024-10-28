@@ -142,13 +142,13 @@ nav {
   li {
     float: left;
     display: inline;
-    text-decoration: none;
+    list-style: none;
     
   }
   
   a {
     padding: 10px;
-    max-width: 25px;
+    max-width: 75px;
     
   }
  
@@ -168,10 +168,20 @@ nav {
   }
   #chair{
     position:absolute;
-    vertical-align: middle;
-    padding: 0% 0% 0% 40%;
+    vertical-align: top;
     object-fit: cover;
-    margin: 15px;
-
-
+    margin-top:-100px;
+    padding-left: 40%;
   }
+#kid{
+   object-fit: cover;
+    padding-left : 0px;
+    animation: tumble 2s 4000;
+    position: absolute;
+  }
+  
+  @keyframes tumble{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

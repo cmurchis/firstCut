@@ -24,4 +24,26 @@ window.addEventListener('scroll', function() {
   }
 });
 
+var pos = 0;
+let num = 1;
+function move(x, y) {
+ while(y < 4){
+  let kid = document.getElementById(`kid`);
+  kid.setAttribute('src', `img/boi${y}`);
+  kid.setAttribute('background-image', `img/boi${y}`)
+  kid.hidden = false
+  if(x == 40) {
+    kid.classList.remove("tumble");
+    kid.hidden = true;
+    y++
+    kid.removeAttribute('src')
+} else {
+  x++
+  kid.classList.add('tumble')  
+  kid.style.paddingLeft = x + '%;';
+    }
 
+  }
+}
+
+setInterval(move(), 100, pos, num)
