@@ -1,5 +1,7 @@
 * {box-sizing: border-box}
-
+body{
+  background-color: #f8f1e8;
+}
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
   position: relative;
