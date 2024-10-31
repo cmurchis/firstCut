@@ -7,9 +7,7 @@
     <title>First Cut</title>
   </head>
   <body>
-   
     <header> 
-     
       <x class="row" >
       <div id="logo"  >
         <img class="logo responsive image" src="img/logo.png" alt="logo" />
@@ -28,38 +26,53 @@
     
     <nav id="navi" >
       <div  class="container">
-      <ul  class="responsive navbar row" >
-            <li class="column" ><a href="https://www.instagram.com/pamperrrme/"><img id="instagram" src="img/insta.png" class="image responsive"></a></li>
-            <li class=" sticky "> <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" >
+      <ul  class="responsive navbar " >
+            <li class="sticky" ><a href="https://www.instagram.com/pamperrrme/"><img id="instagram" src="img/gram.png" class="image responsive"></a></li>
+            <li class=" sticky "><!-- Google Calendar Appointment Scheduling begin -->
+              <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
               <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-var target = document.currentScript;
-window.addEventListener('load', function() {
-calendar.schedulingButton.load({
-url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1M7iG8RhYj3q_i48gvt_SorPsHsaUN-VjL2cFiPzy0ZI4j4bkFf5ZT9z5V-YDNAemTRXbzaSFb?gv=true',
-color: '#0D98BA',
-label: `Book an event`,
-id: 'book',
-target 
-});
-});
-})();
-</script>
-             </li>         
+              <script>
+              (function() {
+                var target = document.currentScript;
+                window.addEventListener('load', function() {
+                  calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1M7iG8RhYj3q_i48gvt_SorPsHsaUN-VjL2cFiPzy0ZI4j4bkFf5ZT9z5V-YDNAemTRXbzaSFb?gv=true',
+                    color: '#039BE5',
+                    label: 'Book an appointment',
+                    target,
+                  });
+                });
+              })();
+              </script>
+              <!-- end Google Calendar Appointment Scheduling --></li>         
           </ul>
     </nav>
-  </header><!-- header role="banner" -->
+  </header><!--end sticky buttons -->
 </div >
 
-<div id="animate-chair" >
-    <img  src="img/boi1.png" id="kid"/>
-    <img id='chair' src="img/chair.jpg">
+
+<div id="animate-chair" ><!-- haircut animations -->
+    <div id="odd" class="ball">
+      <img src="img/boi1.png"  class="slide-in-anim" id="oddImg"/>
+    </div>
+
+        <iframe id="chair" src="https://giphy.com/embed/cPBFbB0c2m5w3WUeLd" width="33%" style="position:absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <img id="blur" src="img/pow.png">
+      
+    <div id="even" class="ball" hidden >
+      <img src="img/boi2.png" class="slide-in-anim" id="evenImg" >
+    </div>
 </div>
 
-   
+<div id="cuts">
   
-    <center>
+</div>
+   
+  <div>
+    <h2>Custom made resin gift to preserve a lock of hair to memorialize the 'First Cut'.</h2>
+    <button onclick="showHide()">Show/Hide Custom Gift Examples</button>
+    </div>
+    <div id="gifts" hidden>
     <div class="row">
       <div class="container column">
         <img src="./img/teardrop.png" alt="First slide" class="image responsive"> 
