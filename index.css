@@ -88,13 +88,11 @@
   padding-left: 30%;
 }
 #mullet  {
-display:inline;
 object-fit: cover;
 }
 
 
 #scissors  {
-display: none;
 object-fit: cover;
 }
 .modal img{
@@ -204,6 +202,7 @@ nav {
   animation-iteration-count: infinite;
 }
 #blur {
+margin-top: -10%;
   animation: pow 5s infinite ease;
   
 }

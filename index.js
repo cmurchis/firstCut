@@ -2,12 +2,12 @@ const mullet = document.getElementById('mullet');
 const scissors = document.getElementById('scissors');
 
 const toggle = (x, y) => {
-  if(x.hidden){
+  if(x.hidden==true){
   x.hidden = false;
   y.hidden = true;
   }else{
-    x.setAttribute('hidden', false) ;
-    y.setAttribute('hidden', true);
+    x.hidden = true ;
+    y.hidden = false;
   }
 
 };
