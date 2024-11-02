@@ -8,68 +8,41 @@
   </head>
   <body>
     <header> 
-      <x class="row" >
-      <div id="logo"  >
-        <img class="logo responsive image" src="img/logo.png" alt="logo" />
+      <div id="grid" >
+      <div id="logo" class="areaA startRow" >
+        <img class="logo image" src="img/logo.png" alt="logo" />
       </div>
     
-      <div class="toggler">
-        <div id="mullet" >
-        <img src="img/3028350251_af2cf02447_n.jpg" class="responsive column"/>
-        <h1 id="q1" >Ready to fix that toddler mullet?</h1>
-        </div>
-      <div id="scissors" hidden >
-      <img src="img/bad-cut.png" class="responsive column"/>
-      <h1 id="q2" >Someone get ahold of the scissors?</h1>
-      </div>
+      <div class="toggler areaB" >
+        <figure id="mullet" >
+        <img src="img/1.png" class="togglerImg"/>
+        <figcaption id="q1" >Ready to fix that toddler mullet?</figcaption>
+        </figure>
+      <figure id="scissors"  hidden >
+      <img src="img/scissor.png" class="togglerImg"/>
+      <figcaption id="q2" >Someone get ahold of the scissors?</figcaption>
+      </figure>
       </div>
     
-    <nav id="navi" >
-      <div  class="container">
-      <ul  class="responsive navbar " >
-            <li class="sticky" ><a href="https://www.instagram.com/pamperrrme/"><img id="instagram" src="img/gram.png" class="image responsive"></a></li>
-            <li class=" sticky "><!-- Google Calendar Appointment Scheduling begin -->
-              <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-              <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-              <script>
-              (function() {
-                var target = document.currentScript;
-                window.addEventListener('load', function() {
-                  calendar.schedulingButton.load({
-                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1M7iG8RhYj3q_i48gvt_SorPsHsaUN-VjL2cFiPzy0ZI4j4bkFf5ZT9z5V-YDNAemTRXbzaSFb?gv=true',
-                    color: '#039BE5',
-                    label: 'Book an appointment',
-                    target,
-                  });
-                });
-              })();
-              </script>
-              <!-- end Google Calendar Appointment Scheduling --></li>         
-          </ul>
-    </nav>
-  </header><!--end sticky buttons -->
-</div >
+   
 
 
-<div id="animate-chair" ><!-- haircut animations -->
-    <div id="odd" class="ball">
-      <img src="img/boi1.png"  class="slide-in-anim" id="oddImg"/>
+<div id='chair'  class="boi">
+    <div id="odd" class="ball ">
+      <img src="img/boi1.png" class="slide-in-anim" id="oddImg">
     </div>
-
-        <iframe id="chair" src="https://giphy.com/embed/cPBFbB0c2m5w3WUeLd" width="33%" style="position:absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <div id="mid">
+       <img id="chairImg" src="img/chairs.png">
       <img id="blur" src="img/pow.png">
-      
-    <div id="even" class="ball" hidden >
+    </div>
+    <div id="even" class="ball " hidden >
       <img src="img/boi2.png" class="slide-in-anim" id="evenImg" >
     </div>
 </div>
 
-<div id="cuts">
-  
-</div>
-   
+
   <div>
-    <h2>Custom made resin gift to preserve a lock of hair to memorialize the 'First Cut'.</h2>
+    <h1>Custom made resin gift to preserve a lock of hair to memorialize the 'First Cut'.</h1>
     <button onclick="showHide()">Show/Hide Custom Gift Examples</button>
     </div>
     <div id="gifts" hidden>
@@ -154,7 +127,6 @@
     </div>
     </div>
 
-</center>
 
 
 </body>
