@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html> 
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,121 +12,137 @@
       <div id="logo" class="areaA startRow" >
         <img class="logo image" src="img/logo.png" alt="logo" />
       </div>
-    
-      <div class="toggler areaB" >
-        <figure id="mullet" >
-        <img src="img/1.png" class="togglerImg"/>
-        <figcaption id="q1" >Ready to fix that toddler mullet?</figcaption>
-        </figure>
-      <figure id="scissors"  hidden >
-      <img src="img/scissor.png" class="togglerImg"/>
-      <figcaption id="q2" >Someone get ahold of the scissors?</figcaption>
-      </figure>
-      </div>
-    
+      <div class="toggler">
+        <div id="mullet">
+         <figure id="mulletImg"><img src='img/1.png'></figure>
+         <figcaption>Ready to update the toddler mullet?</figcaption>
+        </div>
+        <div id="scissors" hidden>
+         <figure id="scissorsImg"><img src='img/scissor.png'></figure>
+         <figcaption>Did someone get ahold of the scissors?</figcaption>
+        </div>
+        <div id="a1">
+         <figure ><img id="exp" src='img/fade.png'></figure>
+         <figcaption>Schedule a 1 hour 'First Cut' event.</figcaption>
+        </div>
+          
+       </div>    
    
+    
 
-
+  
 <div id='chair'  class="boi">
-    <div id="odd" class="ball ">
+    <div id="odd" >
       <img src="img/boi1.png" class="slide-in-anim" id="oddImg">
     </div>
       <div id="mid">
-       <img id="chairImg" src="img/chairs.png">
+       <img id="chairImg" src="img/chair.png">
       <img id="blur" src="img/pow.png">
     </div>
-    <div id="even" class="ball " hidden >
+    <div id="even" class="col3 span2" hidden >
       <img src="img/boi2.png" class="slide-in-anim" id="evenImg" >
     </div>
 </div>
 
 
-  <div>
-    <h1>Custom made resin gift to preserve a lock of hair to memorialize the 'First Cut'.</h1>
-    <button onclick="showHide()">Show/Hide Custom Gift Examples</button>
-    </div>
-    <div id="gifts" hidden>
-    <div class="row">
-      <div class="container column">
-        <img src="./img/teardrop.png" alt="First slide" class="image responsive"> 
-        <div class="overlay">Teardop pendant</div>
-      </div>
-      <div class="container column">      
-        <img src="./img/heart.png"  alt="Second slide"  class="image responsive"> 
-        <div class="overlay">Heart pendant</div>
-      </div>
-      <div class="container column">      
-        <img  src="./img/4.png" alt="Third slide" class="image responsive"> 
-        <div class="overlay">Heart pendant</div>
-
+    <div id="desc" class="startRow">
+  <h1>First Cut events include</h1> 
+  <ul>
+          <li><h1>Quality haircut planned and performed by a licensed CA cosmetologist</h1></li> 
+          <li><h1>Guest of honors favorite songs playing to help with the enjoyment and prevent any anxiety.</h1></li>  
+          <li><h1>Highlight images including before and after pics taken throughout the event.</h1></li>       
+          <li><h1>Personalized hair care training for guest of honor.</h1></li>  
+          <li><h1>A custom momento displaying a lock of hair from the guest of honor in your choice of clear resin gifts. </h1></li>                                                                                                                                                                                                                                                                                                                                                                                                                                          
+          <li><button id="myBtn">Click to see examples of momentos.</button></li>
+        </ul>
         </div>
-      <div class="container column">      
+<div id="gifts">
+ <div id="myModal" class="startRow " >
+    <span class="close">Click here to close</span>
+                                    <div class="container column modal-content">
+        <img src="img/teardrop.png" alt="First slide" class="image responsive"> 
+       </div>
+       <div class="overlay">Teardop pendant
+      </div>
+        <div class="container column modal-content">      
+            <img src="img/heart.png"  alt="Second slide"  class="image responsive"> 
+            <div class="overlay">Heart pendant
+            </div>
+        </div>
+     <div class="container column modal-content">      
+        <img  src="img/4.png" alt="Third slide" class="image responsive"> 
+     <div class="overlay">Heart pendant
+     </div>
+
+     </div>
+      <div class="container column modal-content">      
         <img  src="./img/5s.png"  alt="fourth slide" class="image responsive"> 
         <div class="overlay">Teardrop earrings</div>
 
     </div>
-    </div>
-    <div class="row">
-      <div class="container column">
-        <img src="./img/bangle.png" alt="First slide" sclass="image responsive"> 
+    <div class="startRow">
+      <div class="container column modal-content">
+        <img src="img/bangle.png" alt="First slide" sclass="image responsive"> 
         <div class="overlay">Bangle bracelette</div>
 
       </div>
-      <div class="container column">      
-        <img src="./img/rings.png"  alt="Second slide" class="image responsive"> 
+      <div class="zcontainer column modal-content">      
+        <img src="img/rings.png"  alt="Second slide" class="image responsive"> 
         <div class="overlay">Ring</div>
 
       </div>
-      <div class="container column">      
-        <img  src="./img/ornament.png" alt="Third slide" class="image responsive"> 
+      <div class="container column modal-content">      
+        <img  src="img/ornament.png" alt="Third slide" class="image responsive"> 
         <div class="overlay">Custom ornament</div>
         </div>
-      <div class="container column">      
-        <img  src="./img/keepsake.png"  alt="fourth slide" class="image responsive"> 
+      <div class="container column modal-content">      
+        <img  src="img/keepsake.png"  alt="fourth slide" class="image responsive"> 
         <div class="overlay">Custom ornament</div>
 
     </div>
     </div>
-    <div class="row">
-      <div class="container column">
-        <img src="./img/marble.png" alt="First slide" class="image responsive"> 
+    <div class="startRow">
+      <div class="container column modal-content">
+        <img src="img/marble.png" alt="First slide" class="image responsive"> 
         <div class="overlay">Marble pendant</div>
       </div>
-      <div class="container column">      
-        <img src="./img/paperweight.png"  alt="Second slide" class="image responsive"> 
+      <div class="container column modal-content">      
+        <img src="img/paperweight.png"  alt="Second slide" class="image responsive"> 
         <div class="overlay">Custom paperweight</div>
 
       </div>
-      <div class="container column">      
-        <img  src="./img/keychain.png" alt="Third slide" class="image responsive"> 
+      <div class="container column modal-content">      
+        <img  src="img/keychain.png" alt="Third slide" class="image responsive"> 
         <div class="overlay">Custom keychain</div>
         </div>
-      <div class="container column">      
-        <img  src="./img/pendents.png"  alt="fourth slide" class="image responsive"> 
+      <div class="container column modal-content">      
+        <img  src="img/pendents.png"  alt="fourth slide" class="image responsive"> 
         <div class="overlay">Assorted pendants</div>
 
     </div>
     </div>
-    <div class="row">
-      <div class="container column">
-        <img src="./img/2.png" alt="First slide" class="image responsive" >
+    <div class="startRow">
+      <div class="container column modal-content">
+        <img src="img/2.png" alt="First slide" class="image responsive" >
         <div class="overlay">Oval pendant</div>
  
       </div>
-      <div class="container column">      
-        <img src="./img/3.png"  alt="Second slide" class="image responsive" > 
+      <div class="container column modal-content">      
+        <img src="img/3.png"  alt="Second slide" class="image responsive" > 
         <div class="overlay">Teardrop pendant</div>
       </div>
-      <div class="container column">      
-        <img  src="./img/round.png" alt="Third slide" class="image responsive" > 
+      <div class="container column modal-content">      
+        <img  src="img/round.png" alt="Third slide" class="image responsive" > 
         <div class="overlay">Custom paperweight</div>
         </div>
-      <div class="container column">      
-        <img  src="./img/studs.png"  alt="fourth slide" class="image responsive" > 
+      <div class="container column modal-content">      
+        <img  src="img/studs.png"  alt="fourth slide" class="image responsive" > 
         <div class="overlay">Studs</div>
     </div>
     </div>
-
+    </div>
+    </div>
+    </div>
 
 
 </body>

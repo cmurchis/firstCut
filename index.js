@@ -1,18 +1,22 @@
+const exp = document.getElementById('exp')
 const mullet = document.getElementById('mullet');
 const scissors = document.getElementById('scissors');
-
-const toggle = (x, y) => {
-  if(x.hidden==true){
+const arr = ['img/bob.png', 'img/fade.png', 'img/fade2.png', 'img/fade3.png', 'img/fade4.png', 'img/hawk.png', 'img/crew.png']
+const toggle = (x, y, z, a) => {
+ if(x.hidden == false){
+  x.hidden = true
+  y.hidden = false
+  
+  z.setAttribute('src', a[Math.floor(Math.random() * 6)] )
+ }else{
   x.hidden = false;
   y.hidden = true;
-  }else{
-    x.hidden = true ;
-    y.hidden = false;
-  }
+  z.setAttribute('src', a[Math.floor(Math.random() * 6)])
+ }
 
-};
+}
 
-setInterval(toggle, 3000, mullet, scissors);
+setInterval(toggle, 3000, mullet, scissors, exp, arr);
 
 
 const evenE = document.getElementById('even')
@@ -21,20 +25,32 @@ const evenImg = document.getElementById('evenImg');
 const oddImg = document.getElementById('oddImg');
 const gifts = document.getElementById('gifts')
 
-const toggleElement = () => {
-  if(gifts.hidden == true){
-    gifts.hidden = false;
-  }else{
-    gifts.hidden = true;
-  }
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
+//  close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-function showHide() {
-  if(gifts.hidden){
-    gifts.hidden = false;
-  }else{
-    gifts.setAttribute('hidden', 'true')  
+// clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 
