@@ -100,9 +100,7 @@ body{
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
-  nav img{
-    max-width: 30%;
-  }
+ 
   a img{
     max-width: 12%;
     padding-left: 5%;
@@ -127,7 +125,7 @@ body{
 
     45%{
       opacity: 1;
-      transform: translateX(95vw);
+      transform: translateX(45vw);
     }
     100% {
       transform: translateX(97vw);
@@ -184,17 +182,6 @@ h1, figcaption, button{
 .col1{
   grid-column-start: auto;
 }
-nav {
-	position: relative; /* Initial position */
-  width: 100%;
-  
-  }
-  
-  nav.sticky {
-	position: fixed;
-
-  z-index: 10;
-  }
  
   li {
     list-style: none;
@@ -207,11 +194,6 @@ nav {
     
   }
  
-  .navbar{
-    position:fixed;
-  z-index: 10;
-  }
-
 
 
 .slide-in-anim {
@@ -220,19 +202,7 @@ nav {
 
 }
 
-.ball {                                                                                                                                                                                                                       
-  animation: bounce 1s infinite ease;
-  animation-direction: normal;
-  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
 
-}
-#blur {
-  animation: pow 5s infinite ease;
-  padding-left: 35vw;
-  padding-right: 35vw;
-  max-width: 25vw;
-  
-}
 
 @keyframes bounce {
   from {
